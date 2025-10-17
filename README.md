@@ -33,7 +33,7 @@ pip install "flask[async]" aiohttp
 
 ```python
 from flask import Flask
-from banner import Banner  # Импорт вашего класса Banner
+from flaskbanstates import Banner  # Импорт вашего класса Banner
 
 app = Flask(__name__)
 
@@ -70,7 +70,7 @@ app.run('0.0.0.0', port=5000)
 
 ```python
 from flask import Flask
-from banner import AsyncBanner
+from flaskbanstates import AsyncBanner
 
 app = Flask(__name__)
 
@@ -173,7 +173,7 @@ async def index():
 
 ```python
 from flask import Flask
-from banner import Banner
+from flaskbanstates import Banner
 
 app = Flask(__name__)
 Banner(app, banned_countries=['UA', 'RU'], whitelisted_endpoint=['index'])
